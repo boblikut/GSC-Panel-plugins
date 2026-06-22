@@ -56,7 +56,7 @@ end, "Give Weapon", getWeaponList, true)
 
 gsc.CreateCommand("gravity", "Allow change gravity of the server", function(gravity, ply)
     RunConsoleCommand("sv_gravity", tonumber(gravity) or 0)
-end, "Grabity", "Enter the gravity value...", false, function() return GetConVar("sv_gravity"):GetInt() end)
+end, "Gravity", "Enter the gravity value...", false, function() return GetConVar("sv_gravity"):GetInt() end)
 
 local PLAYER = FindMetaTable("Player")
 local ENTITY = FindMetaTable("Entity")
